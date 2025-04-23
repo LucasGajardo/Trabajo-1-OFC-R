@@ -29,7 +29,7 @@ Para el desarrollo del análisis estadístico, se utilizó la base de datos de l
 options(scipen = 999) #Desactivar la notación científica
 
 # Establecer el directorio de trabajo
-setwd("C:/Users/lucas/Documents/Optativo R - Lucas G. y Alex G")
+setwd("C:/Users/lucas/Documents/GitHub/Trabajo-1-OFC-R/Optativo R - Lucas G. y Alex G")
 
 # Instalar los paquetes a utilizar: la instalación de paquetes se realiza una sola vez.
 #install.packages("pacman")
@@ -43,7 +43,6 @@ setwd("C:/Users/lucas/Documents/Optativo R - Lucas G. y Alex G")
 #kableExtra, # Construcción de tablas
 #knitr,# Construcción de tablas
 #sjPlot) # Gráficos
-
 
 library(pacman) #llamamos al paquete
 
@@ -65,7 +64,8 @@ pacman::p_load(dplyr,
 
 
 # Carga de base de datos
-Base_VIF <- read_sav(file = "Estadistica II, Practico 3_BBDD_VIF (2017)_RM_para practico.sav") # Encuesta Casen 2022
+Base_VIF<- read_sav ("Estadistica II, Practico 3_BBDD_VIF (2017)_RM_para practico.sav")
+ # Encuesta Casen 2022
 
 
 #View(Base_ENDH)
@@ -160,6 +160,8 @@ ggplot(Base_VIF, aes(x = factor(grado_de_acuerdo_estereotipos_masculinos))) +
   scale_y_continuous("Porcentaje", labels=scales::percent, limits=c(0,1)) +
   labs(title = "Figura 1. Frecuencia de grado de acuerdo a estereotipos masculinos",
        subtitle = "Porcentajes de la variable grado_de_acuerdo_estereotipos_masculinos") 
+
+
 ```
 
 En primer lugar, los estadísticos referentes al grado de acuerdo a estereotipos masculinos por parte de las mujeres encuestadas, señalan que alrededor del 75% del total de la muestra tiene un bajo grado de acuerdo a estos estereotipos; mientras que alrededor del 24% presenta un medio grado de acuerdo; y menos del 1% poseen un alto grado de acuerdo a los estereotipos masculinos. El bajo grado de acuerdo posee gran frecuencia siendo así aquella la **moda**. En general, es posible decir que las mujeres no poseen gran acuerdo con los estereotipos masculinos. Aquello sugiere que las mujeres rechazan en gran medida las nociones machista y un pequeño grupo acepta los roles tradicionales del hombre y, por ende, el de la mujer.
