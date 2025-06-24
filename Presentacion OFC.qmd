@@ -1,0 +1,93 @@
+---
+title: "Incidencia de los estereotipos masculinos en la prevalencia de dependencia económica de la mujer."
+author: "Alex Garrido & Lucas Gajardo"
+format:
+  revealjs: 
+    theme: dark
+fontsize: 30px 
+editor: visual
+bibliography: references.bib
+theme: blue 
+---
+
+## Problema de investigación
+
+Teniendo en cuenta que **la dependencia económica da lugar** y **potencia** una diversidad de violencias contra la mujer [@rodríguezenríquez2012]  y que, **la adherencia a estereotipos masculinos** (y de género en su totalidad) “\[...\] oprimen y envilecen el correcto desarrollo de las aptitudes de la mujer.” De modo que “intervienen gradualmente en la construcción femenina, **una construcción que debe ser demolida**…” [@bituga-nchama2021].
+
+**Objetivo**: abordar como la dependencia económica se ve agravada por los estereotipos masculinos
+
+**Hipótesis**: a mayor grado de acuerdo con los estereotipos masculinos, mayor prevalencia de dependencia económica, y viceversa.
+
+## Base de datos
+
+::::: columns
+::: {.column width="70%"}
+Para este estudio se utilizó la base de datos de la **Tercera Encuesta Nacional de Violencia Intrafamiliar contra la mujer y delitos sexuales (2017)** realizada por el  Ministerio del Interior y Seguridad Pública del Gobierno de Chile. Esta fue aplicada entre diciembre de 2016 y marzo de 2017 a 6.824 mujeres entre 16 y 65 años de todas las regiones del país.
+:::
+
+::: {.column width="30%"}
+![](output/Grafico1.png){width="503"}
+:::
+:::::
+
+## Análisis descriptivo de las variables pertinentes
+
+::::: columns
+::: {.column width="50%"}
+-   El **71,5%** **de mujeres** que poseen **bajo grado de acuerdo a los estereotipos masculinos** poseen una **mediana dependencia económica.**
+
+-   **Solo el 24,3% de mujeres con bajo acuerdo a los estereotipos masculinos son independientes económicamente.**
+
+-   Según la hipótesis planteada, se esperaría que el grupo de mujeres con bajo acuerdo a estereotipos masculinos tengan mayor frecuencia en la categoría de “independencia” económica.
+:::
+
+::: {.column width="50%"}
+![](output/Grafico2.png){width="621"}
+:::
+:::::
+
+## Construcción de índice
+
+En principio, se pensó en construir un **índice de adhesión a estereotipos masculinos o de género**, no obstante, tras una revisión extensa de bibliografía no se logró dar con una operacionalización de un índice con sus respectivas variables que sea lo suficientemente riguroso y exhaustivo.
+
+Se optó por indagar con índices que se adecuen a la misma línea investigativa que se planteó en un comienzo, por consiguiente, se decidió por construir un **Índice de Sexismo**
+
+Este índice es **multidimensional**, constituyéndose por medio de dos dimensiones: **(1) seximo hostil** y **(2) sexismo benevolente [@maguiña].**
+
+## Consistencia interna del Índice de Sexismo
+
+::::: columns
+::: {.column width="40%"}
+Se utiliza Alfa de Cronbach para evaluar en conjunto los 14 ítems que componen el Índice de Sexismo.
+
+´raw_alpha´ equivalente a 0.9 
+
+´std.alpha´ equivalente a 0.91 
+
+Esto permite señalar que hay una alta consistencia interna, encontrándose en los valores máximos estimados (Oviedo, 2005).  En este sentido, se considera que los 14 ítems contribuyen de forma consistente al constructo del Índice de Sexismo.
+:::
+
+::: {.column width="60%"}
+![](output/Grafico3.png){width="11.2cm"}
+:::
+:::::
+
+## Regresiones lineales
+
+Para realizar las regresiones lineales, se toma como **variable dependiente** el **Índice de Sexismo**. En este marco, se crea un modelo de regresión lineal múltiples con 10 predictores. Entre los resultados más relevantes (efectos que se pueden **extrapolar con un 99% de confianza**), se observa que:
+
+-   Las mujeres con educación media (b= -0.19) y superior (b= -0.27) tienen efectos negativos en el Índice de Sexismo a comparación de las que tienen educación básica. 
+
+-   En promedio, las mujeres por cada unidad aumentada en el grupo socioeconómico ven disminuido en 0.10 su puntaje en el Índice de Sexismo
+
+-   En promedio, haber sufrido violencia económica disminuye en 0.20 unidades el Índice de Sexismo en las mujeres
+
+-   Respecto al Índice de dependencia económica, mediante un regresión lineal simple, se observó que tiene 0% de capacidad explicativa (R2=0) de la varianza del Índice de Sexismo.
+
+## Conclusión
+
+Se logró dilucidar que tanto las **mujeres** con **mayor nivel educativo**, como las que **pertenecen a grupos socioeconómicos más acomodados** y que **han sufrido alguna vez en su vida violencia económica** muestran **menor grado de adherencia a actitudes ambivalentes** **(hostil y benevolente)** hacia las personas en virtud de su sexo biologico (ser mujer u hombre); es decir, poseen menos actitudes sexistas que mujeres que no tienen las mismas condiciones. 
+
+Por otro lado, resulta llamativo que mujeres que han vívido violencia económica se adhieran en menor medida a conductas sexistas, lo cual podría indicar que después de un suceso como ese, logran generar conciencia y una actitud crítica, rechazando actitudes y creencias que se aproximan a las lógicas de control experimentadas.
+
+## Bibliografía.
